@@ -1,0 +1,113 @@
+/* Kodet av Skjalg */
+/* Universal is common code for Nav, Header and footer on all the pages */
+/************
+ Start: Nav-bar
+*************/
+.navbar-container {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    z-index: 9;
+}
+
+.navbar-list-container {
+    margin: 35px 5% 0;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    width: 350px;
+    justify-content: space-between;
+}
+.navbar-list div {
+   opacity: 0.9;
+   transition: 0.5s;
+}
+.navbar-list a {
+   border-bottom: 2px transparent solid;
+   transition: 0.5s;
+}
+
+.navbar-list div:hover {
+    opacity: 1;
+}
+
+.navbar-logo {
+    justify-self: flex-start;
+    font-family: open-sans-bold;
+}
+
+.navbar-list-container a {
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.navbar-list-container a:hover {
+    opacity: 1;
+}
+
+/************
+ Start: header
+*************/
+.header-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-image-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.header-text-container {
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 5%;
+    font-family: open-sans-bold;
+    font-size: 1.5em;
+}
+
+.header-index-text {
+    /* border-left + padding-left in .header-index-line-one */
+    padding-left: 7px;
+}
+
+
+/*************
+ Start: Footer
+**************/
+.footer-container {
+    height: 50px;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.content-container {
+    position: relative; 
+    padding-top: 5px;
+    margin: 0 5%;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.icon-list {
+    display: flex;
+}
+
+.icon {
+    margin: 10px 15px;
+    width: 32px;
+}
+
+.copyright-container {
+    position: absolute;
+    right: 5px;
+    flex-direction: row;    
+}
+
+.copyright-container h2 {
+    margin-right: 5px;
+}

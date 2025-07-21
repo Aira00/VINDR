@@ -1,0 +1,594 @@
+/* Main-content kodet av Kristoffer*/
+/* Navigation/header/footer kodet av Skjalg*/
+
+@import url(utilities.css);
+@import url(universal.css);
+
+body {
+    background-color: black;
+}
+
+/********************** 
+   NAVBAR 
+ *********************/
+
+.navbar-list a:hover, .navbar-list div:nth-child(2) {  
+    border-bottom: 2px solid #3DEFDE;   
+} 
+
+/********************** 
+   HEADER 
+ *********************/
+.header-image-container {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.164)),
+    url('../images/header_img_technology.jpg');
+}
+
+.title-container-1 {
+    border-left: 5px solid #3DEFDE;
+    padding: 10px;
+}
+
+.title-container-2 {
+    border-bottom: 5px solid #3DEFDE;
+    padding: 10px;
+}
+
+/********************** 
+   TECH INFO SECTION 
+ *********************/
+
+.main-wrapper {
+    width: 100vw;
+}
+
+.container-tech-section {
+    height: 100%;
+    width: 1000px;
+    max-width: 1440px;
+    background-color: #000000;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: open-sans-bold;
+}
+
+/**************************** 
+    BOX SIZES
+
+    1 - BIG
+    2 - MEDIUM
+    3 - SMALL
+    4 - TINY
+ ****************************/
+
+.box-size-1 {
+    width: 100%;
+    height: 522px;
+    border-radius: 35px;
+    background: rgb(69,240,220);
+    background: linear-gradient(0deg, rgba(69,240,220,1) 0%, rgba(119,254,216,1) 84%);
+    margin-top: 35px;
+}
+
+.box-size-2 {
+    width: 300px;
+    height: 380px;
+    border-radius: 35px;
+    margin-top: 35px;
+}
+
+.box-size-3 {
+    width: 750px;
+    height: 422px;
+    margin-top: 35px;
+}
+
+.box-size-3 img {
+   height: 420px;
+   width: 100%;
+}
+
+.box-size-4 {
+    width: 210px;
+    height: 200px;
+    border-radius: 35px;
+}
+
+
+/* Container for metric text - box-size-4*/
+.box-container {
+    width: 210px;
+    height: 422px;
+    margin-top: 35px;
+    background-color: #000000;
+}
+
+
+/********************** 
+      ITEM 1
+************************/
+.item-1 {
+    display: flex;
+    background-color: #212b36;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.item-1 .box-icon {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.item-1 .text-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px
+}
+
+.item-1 .box-icon #windmill-turbine {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    margin-left: 90px;
+    margin-top: 5px;
+
+}
+
+.item-1 .box-icon #windmill-tower {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    margin-left: 90px;
+    margin-top: 140px;
+}
+
+#windmill-turbine {
+    animation: turbine 3s infinite linear;
+}
+
+@keyframes turbine {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.item-1 .text-box h1 {
+    width: 300px;
+    text-align: center;
+    font-size: 60px;
+    margin: 0px;
+
+}
+
+.item-1 .text-box h4 {
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.item-1 .text-box h3 {
+    width: 300px;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+}
+
+/********************** 
+      ITEM 2
+************************/
+
+.item-2{
+    /* background: rgb(69,240,220);
+    background: linear-gradient(0deg, rgba(69,240,220,1) 0%, rgba(119,254,216,1) 84%); */
+    background: #3DEFDE;
+    color: #fff;
+    position: relative;
+}
+
+.box-icon-2 {
+    position: absolute;
+    display: flex;
+}
+
+#house_icon {
+    width: 150px;
+    height: 150px;
+    margin-left: 75px;
+    margin-top: 30px;
+}
+
+
+#power_icon {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 45px;
+    animation: test 2s infinite;
+    background-image: url(../icons/icon_house_energy_2.svg);
+}
+
+@keyframes test {
+    0% {
+        background-image: url(../icons/power_icon/power_1.svg);
+    }
+    50% {
+        background-image: url(../icons/power_icon/power_2.svg);
+    }
+    100% {
+        background-image: url(../icons/power_icon/power_3.svg);
+    }
+
+}
+
+.item-2 .text-box h1 {
+    width: 300px;
+    text-align: center;
+    font-size: 60px;
+    margin: 3px;
+}
+
+.item-2 .text-box h4 {
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+.item-2 .text-box h3 {
+    width: 300px;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+}
+
+.item-2 .text-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 180px;
+}
+
+/********************** 
+      ITEM 3
+************************/
+
+.item-3 {
+    background-color: #212b36;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-icon-3 {
+    position: relative;
+    height: 150px;
+}
+
+#tower_park {
+    position: absolute;
+    height: 160px; 
+    width: 160px;
+    margin-top: 40px;
+
+}
+
+#turbine_1 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    margin-left: -60px;
+    margin-top: 20px; 
+    animation: turbine 3000ms infinite linear;
+}
+
+#turbine_2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 45px;
+    margin-top: -20px;
+    animation: turbine 3200ms infinite linear;
+}
+#turbine_3 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 115px;
+    margin-top: -45px;
+    animation: turbine 3500ms infinite linear;
+}
+
+@keyframes turbine {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.item-3 .text-box h1 {
+    width: 300px;
+    text-align: center;
+    font-size: 60px;
+    margin: 3px;
+}
+
+
+.item-3 .text-box h3 {
+    width: 300px;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+}
+
+.item-3 .text-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/********************** 
+      ITEM 4
+************************/
+
+.item-4 img {
+    height: 522px;
+    width: 922px;
+    margin-left: 70px;
+}
+
+/********************** 
+      ITEM 5
+************************/
+
+.item-5 {
+    background-color: #212b36;
+    color: #fff;
+}
+.item-5 img {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 55px; 
+}
+
+.item-5 .text-box h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.item-5 .text-box h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+.item-5 .text-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+/********************** 
+      ITEM 6
+************************/
+
+.item-6 {
+    display: flex;
+    background-color: #212b36;
+    color: #fff;
+    margin-top: 20px;
+}
+.item-6 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.item-6 .text-box h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-top: -30px;
+    margin-right: 5px;
+    padding-bottom: 0;
+}
+
+.item-6 .text-box h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.item-6 .text-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: 150px;
+    margin: 0;
+}
+
+/********************** 
+      ITEM 7
+************************/
+
+.item-7 {
+    background: rgb(69,240,220);
+    background: linear-gradient(0deg, rgba(69,240,220,1) 0%, rgba(119,254,216,1) 84%);
+    color: #fff;
+}
+.item-7 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 75px;
+    margin-top: 30px;
+}
+
+.item-7 .text-box h1 {
+    width: 300px;
+    text-align: center;
+    font-size: 40px;
+    margin: 3px;
+}
+
+.item-7 .text-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+ /********************** 
+      ITEM 8
+************************/
+
+.item-8 {
+    background: #212b36;
+    color: #fff;
+}
+
+.item-8 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 75px;
+    margin-top: 40px;
+}
+
+.item-8 .text-box h1 {
+    width: 300px;
+    text-align: center;
+    font-size: 60px;
+    margin: 15px 3px 3px 3px;
+}
+
+.item-8 .text-box h3 {
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0 0 0;
+}
+
+.item-8 .text-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/********************** 
+      ITEM 9
+************************/
+
+.item-9 {
+    background-color: #212b36;
+    color: #fff;
+}
+
+.item-9 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 75px;
+    margin-top: 40px;
+}
+
+.item-9 img {
+    animation: globe 12000ms infinite linear;
+}
+
+@keyframes globe {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.item-9 .text-box h1 {
+    width: 300px;
+    text-align: center;
+    font-size: 60px;
+    margin: 10px 3px 3px 3px;
+}
+
+
+.item-9 .text-box h3 {
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0 0 0;
+}
+
+.item-9 .text-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/********************** 
+    BOTTOM SECTION 
+**********************/
+.bottom-section .bottom-image{
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bottom-section h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    margin: 0 0 0 150px;
+    font-family: sans-serif;
+}
+
+.bottom-text-container {
+    margin-top: 50px;
+}
+
+#offset {
+    color: #A1A1A6;
+}
+
+.bottom-image {
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.527)),
+    url('../images/bottom_image.jpg');
+    background-size: cover;
+    height: 850px;
+    width: 100%;
+    display: flex;
+    margin-bottom: -10px;
+}
+
+/********************** 
+ FOOTER 
+************************/
+
+.footer-container {
+    position: absolute;
+    align-self: flex-end;
+}
+.content-container {
+    border-top: 1px solid #3DEFDE;
+}
+.copyright-container h2 {
+    color: #3DEFDE;
+}

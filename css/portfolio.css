@@ -1,0 +1,325 @@
+/* Main-content kodet av Dennis*/
+/* Navigation/header/footer kodet av Skjalg*/
+
+@import url(utilities.css); 
+@import url(universal.css);
+
+/************
+body style
+*************/
+body {
+    /* we define the background color of the site as black with body and background-color*/
+    background-color: #000000;
+}
+
+/************************
+ Start: Navbar css
+************************/
+
+.navbar-list a:hover, .navbar-list div:nth-child(1) {   
+    border-bottom: 2px #891FDF solid;  
+} 
+
+/************************
+ Start: Header css
+************************/
+.header-image-container {
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.8) 100%),
+    url("../images/header_img_portfolio.png");
+}
+
+.header-index-line-one {
+    border-left: 3px solid #891FDF;
+    padding-left: 4px;
+    color: #212B36;    
+}
+
+/************************ 
+ Start: Footer css 
+************************/
+.content-container {
+    border-top: 1px solid #891FDF;
+}
+
+.copyright-container h2 {
+    color: #891FDF;
+}
+
+/***************************
+    bottom section / footer
+***************************/
+.bottom-section {
+    align-items: flex-end;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.327)),
+    url('../images/bottom-image-portfolio.jpg');
+    background-size: cover;
+    height: 750px;
+    width: 100vw;
+}
+
+/***********************
+main page container
+************************/
+
+.portfolio-page-container {
+    flex-direction: column;
+    width: 100vw;
+}
+
+/******************************************
+            country nav bar
+*******************************************/
+
+.location-nav-container {
+    background: rgb(126,0,219);
+    width: 100vw;
+}
+
+.flex-nav-container {
+    flex-wrap: nowrap;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.flex-nav-container > div {
+    width: 100%;
+    padding: 10px;
+    text-align: center;   
+}
+
+.flex-nav-container a:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+/***************************************
+    Country container style 
+**************************************/
+.country-section-container {
+    flex-direction: column;
+}
+
+.container-country {
+    position: relative;
+    background: #212B36;
+    border-radius: 45px;
+    margin-top: 5%;
+    height: 685px;
+    width: 1060px;
+}
+.container-country .text-container {
+    color: #FFFFFF;
+    width: 371px;
+    margin-top: 20px;
+}
+
+.container-country h1 {
+    margin: 30px 30px 15px 30px;
+    text-align: center;
+}
+
+.container-country h3 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+/*************************
+   ITEM 1 
+*************************/
+.container-country .text-container {
+    color: #FFFFFF;
+    margin-left: 35px;
+}
+
+.usa-map {
+    width: 520px;
+    height: 505px;
+    margin: 50px 0 0 70px;
+    filter: opacity(100%);
+    z-index: 3;
+}
+
+/*************************
+    ITEM 2 
+*************************/
+.item-2 .text-container {
+    margin-left: 100px;
+}
+
+.item-2 {
+    background: rgb(126,0,219);
+    background: linear-gradient(180deg, rgba(126,0,219,1) 28%, rgba(43,91,215,1) 100%);
+}
+
+.uk-map {
+    width: 512px;
+    height: 512px;
+    margin: 80px 0 0 0;
+}
+
+/*************************
+    ITEM 3
+*************************/
+.norway-map {
+    width: 512px;
+    height: 512px;
+    margin: 65px 0 0 50px;
+}
+
+/*************************
+    ITEM 4 
+*************************/
+.item-4 .text-container {
+    margin-left: 100px;
+}
+
+.item-4 {
+    background: rgb(126,0,219);
+    background: linear-gradient(180deg, rgba(126,0,219,1) 28%, rgba(43,91,215,1) 100%);
+}
+
+.germany-map {
+    width: 480px;
+    height: 480px;
+    margin: 100px 0 0 50px;
+}
+
+/***************************
+    MAP circle POSITION 
+***************************/
+/* USA */
+.circle-1 {
+    left: 930px;
+    top: 420px;
+}
+
+/* SCOTLAND */
+.circle-2 {
+    left: 400px;
+    top: 70px;
+}
+
+/* NORWAY */
+.circle-3 {
+    left: 850px;
+    top: 100px;
+}
+
+.circle-4 {
+    left: 600px;
+    top: 280px;
+}
+
+.circle-5 {
+    left: 450px;
+    top: 460px;
+}
+
+/* Germany */
+.circle-6 {
+    left: 350px;
+    top: 130px;
+}
+
+/* universal circle size */
+.circle-size{
+    position: absolute;
+    z-index: 8;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+}
+
+/* color */
+.circle-color-black{
+    background: #000000;
+}
+
+.circle-color-gradient{
+    background: rgb(126,0,219);
+}
+
+/*******************************************
+            ANIMATIONS
+********************************************/
+
+.circle-animation {
+    box-shadow: 0 0 0 0 rgba(226, 241, 8, 0.7);
+    margin: 10px;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+    box-shadow: 0 0 0 0 rgba(226, 241, 8, 1);
+}
+        
+    70% {
+    box-shadow: 0 0 0 10px rgba(226, 241, 8, 0);
+}
+        
+    100% {
+    box-shadow: 0 0 0 0 rgba(226, 241, 8, 0);
+}
+}
+
+/* container animation */
+.container-style {
+    transition: 0.5s ease-out;
+}
+
+.container-style:hover{
+    transform: scale(1.01);
+}
+
+/********************************************
+  map overlay
+********************************************/
+
+ /* wind parks universal animasion size and position */
+ .wind-park{
+    position: absolute;
+    background-size: contain;
+    margin: 0;
+    z-index: 4;
+    filter: opacity(0%);
+    transition: 0.3s ease-in;
+ }
+
+ /* positions and size */
+ .usa-wind-park {
+    width: 670px;
+    height: 675px;
+    top: 30px;
+    left: 435px;
+}
+
+.uk-wind-park {
+    width: 670px;
+    height: 660px;
+    top: 50px;
+    left: -40px;
+}
+
+.norway-wind-park {
+    height: 750px;
+    width: 750px;
+    top: 0px;
+    left: 270px;
+}
+
+.germany-wind-park {
+    height: 750px;
+    width: 750px;
+    top: 20px;
+    left: -80px;
+}
+
+/* map to wind park hover */
+.circle-animation:hover ~ .wind-park{
+    filter: opacity(100%);
+}
+
+.circle-animation:hover ~ .map {
+    filter: opacity(0);
+}

@@ -1,0 +1,44 @@
+/* Kodet av Kristoffer, Dennis, Aira og skjalg */
+/* Elements that is used in several pages is gathered in utilities.css */
+@font-face {
+    font-family: "open-sans-regular";
+    src: url("../font/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "open-sans-semibold";
+    src: url("../font/OpenSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: "open-sans-bold";
+    src: url("../font/OpenSans-Bold.ttf");
+}
+
+.bold {
+    font-family: open-sans-bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212b36;
+    color: #FFFFFF;
+    font-family: open-sans-regular;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    color: inherit;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}

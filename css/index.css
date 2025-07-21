@@ -1,0 +1,229 @@
+/* Main-content kodet av Skjalg*/
+/* Navigation/header/footer kodet av Skjalg*/
+
+@import url(utilities.css); 
+@import url(universal.css);
+
+/*****************
+ Start: Navbar css 
+******************/
+.navbar-list a:hover {  
+    border-bottom: 2px #FF1243 solid;
+}
+
+/****************** 
+ Start: Header css 
+******************/
+.header-image-container {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.4) 30%, rgba(0,0,0,0.8) 100%),
+    url("../images/header_img_index.jpg");
+}
+
+.header-index-line-one {
+    border-left: 3px solid #FF1243;
+    padding-left: 4px;
+    color: #212B36;
+}
+
+.header-index-text span {
+    border-bottom: 4px solid #FF1243;
+}
+
+/****************** 
+ Start: Footer css
+******************/
+.content-container {
+    border-top: 1px solid #FF1243;
+}
+
+.copyright-container h2 {
+    color: #FF1243;
+}
+
+/******************
+ Start main content 
+******************/
+.index-main-container {
+    flex-direction: column;
+    width: 100vw;
+}
+
+/****************** 
+ Start first info 
+******************/
+.index-tripple-info-container {
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    margin: 40px 5%;
+}
+
+.info-container {
+    flex-direction: column;
+    width: 33%;
+}
+
+.info-text-container {
+    flex-direction: column;
+    max-width: 350px;
+    height: 200px;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.info-container img {
+    height: 125px;
+    align-self: center;
+}
+
+/******************
+ Start: video  
+ Section where the customer 
+ can implement a video-element.
+******************/
+.video-container {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.video-container img{
+    width: 100%;
+}
+
+/******************
+ Start: second information 
+******************/
+.index-second-info-container {
+    max-width: 1440px;
+    margin: 40px 5%;
+}
+
+.second-info-text-container {
+    width: 65%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second-info-image-container {
+    width: 35%;
+}
+
+.second-info-image-container img {
+    width: 100%;
+}
+
+.text-box-one {
+    border-left: 5px solid #FF1243;
+}
+
+.second-info-text-container p {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.second-info-text-container h1 {
+    margin-left: 5%;
+}
+
+/******************
+ Start: explore section 
+******************/
+.explore-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    max-height: 720px;
+}
+
+.explore-image-container img{
+    width: 100%;
+    filter: brightness(70%);
+    transition: 0.7s ease-out;
+}
+
+/* Makes images brighter on hover */
+.explore-image-container:hover  img {
+    filter: brightness(85%);
+}
+
+.explore-text-container {
+    position: absolute;
+    flex-direction: column;
+    bottom: 15%;
+    height: 60px;
+}
+
+.explore-text-container p {
+    /* Removes margin-block-start on paragraph to move it closer to the header*/
+    margin-block-start: 0;
+}
+
+.explore-text-container a {
+    color: #FF1243;
+}
+
+.explore-text-container a:hover {  
+    border-bottom: 2px #FF1243 solid;   
+} 
+
+/****************** 
+ Start: Third info 
+******************/
+.index-third-info-container {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1440px;
+    margin: 40px 5%;
+}
+
+.third-info-container {
+    width: 100%;
+    margin: 40px 5%;
+    justify-content: space-between;
+}
+
+.third-info-list-container li {
+    padding-inline-start: 1em;
+    margin-block-start: 1em;
+    color: #FF1243;
+}
+.third-info-list-container li span{
+    color: #FFFFFF;
+}
+
+.third-info-stats-conatiner {
+    width: 250px;
+    height: 250px;
+    margin-right: 100px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.stats-columns {
+    height: 10px;
+    width: 30px;
+    background-color: #FF1243;
+    border-radius: 5px 5px 0 0;
+    transition: ease-out 1.5s;
+}
+
+.index-third-info-container:hover .column-one {
+    height: 40px;
+}
+.index-third-info-container:hover .column-two {
+    height: 75px;
+}
+.index-third-info-container:hover .column-three {
+    height: 110px;
+}
+.index-third-info-container:hover .column-four {
+    height: 145px;
+}
+.index-third-info-container:hover .column-five {
+    height: 180px;
+}
+
+/******************
+ End main content
+******************/

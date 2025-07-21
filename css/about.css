@@ -1,0 +1,263 @@
+/* Main-content og end-content kodet av Skjalg, Aira, Kristoffer*/
+/* Navigation/header/footer kodet av Skjalg */
+
+@import url(utilities.css); 
+@import url(universal.css);
+
+/*****************
+ Start: Navbar css 
+*****************/
+.navbar-list a:hover, .navbar-list div:nth-child(3) {
+    border-bottom: 2px #2B5BD7 solid;
+} 
+
+/*****************
+ Start: Header css 
+*****************/
+.header-image-container {
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.6) 100%),
+    url("../images/header_img_about.jpg");
+}
+
+.header-index-line-one {
+    border-left: 4px solid #2B5BD7;
+    padding-left: 5px;
+}
+
+.header-index-line-two {
+    margin-right: 20%;
+}
+
+
+/*****************
+ Start: Footer css 
+*****************/
+.content-container {
+    border-top: 1px solid #2B5BD7;
+}
+.copyright-container h2 {
+    color: #2B5BD7;
+}
+
+/************* 
+ Start: Main
+***************/
+.main-content-container {
+    flex-direction: column;
+    width: 100vw;
+}
+
+/*************** 
+ Start: Timeline 
+****************/
+.timeline-main-header {
+    margin: 40px 5%;
+}
+
+.timeline-container {
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 700px;
+    width: 100%;
+    margin: 40px 5%;
+}
+
+.timeline-left-container {
+    flex-direction: column;
+    width: 40%;
+    border-right: 2px solid #2B5BD7;
+    padding-right: 10%;
+    margin-right: 0;
+}
+
+.timeline-right-container {
+    flex-direction: column;
+    width: 40%;
+    border-left: 1px solid #2B5BD7;
+    padding-left: 10%;
+    margin-left: 0;
+}
+
+.timeline-text-box {
+    width: 100%;
+    height: 200px;
+}
+
+.timeline-year {
+    width: 100%;
+    height: 200px;
+}
+
+.timeline-left-container .timeline-year {
+    justify-content: flex-end;
+}
+
+.timeline-right-container .timeline-year {
+    justify-content: flex-start;    
+}
+
+.timeline-dot {
+    font-size: 70px;
+    color: #2B5BD7;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/****************
+BOTTOM SECTION W/World Map
+*****************/
+
+.bottom-section-container {
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: column;
+}
+
+.bottom-text-container {
+    width: 500px;
+    height: 300px;
+    margin-right: 50px;
+}
+
+.bottom-text-container h1 {
+    font-size: 40px;
+}
+
+.bottom-text-container p {
+    width: 450px;
+    font-size: 18px;
+}
+
+/****************
+DIVIDER WITH HEADERS
+*****************/
+
+.text-divider {
+    max-width: 1110px;
+    width: 100%;
+    height: 100px;
+    border-top: solid 1px #2B5BD7;
+    margin: 0 5%;
+}
+
+#address {
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 300px;
+    display: inline-block;
+}
+
+#contact {
+    margin-top: 15px;
+    margin-right: 8%;
+    padding-left: 420px;
+    width: 300px;
+    display: inline-block;
+}
+/****************
+CONTACT INFORMATION SECTION 
+*****************/
+
+.contact-section-container {
+    height: 500px;
+    height: auto;
+}
+
+.contact-section-container h1 {
+    flex-wrap: wrap;
+    height: 500px;
+    font-size: 25px;
+}
+
+.contact-section-container h3 {
+    width: 350px;
+    margin: 20px 0px 20px 32px;
+}
+
+.contact-section-container h4 {
+    width: 300px;
+    margin: 0;
+    font-size: 16px;
+}
+
+/****************
+CORPORATE OFFICES
+*****************/
+.corporate-info {
+    flex-wrap: wrap;
+    width: 370px;
+    align-self: flex-start;
+}
+
+.corporate-box-1 {
+    margin-bottom: 20px;
+}
+
+.corporate-box-2 {
+    margin-bottom: 20px;
+}
+
+
+/****************
+USA OFFICES
+*****************/
+.usa-info  {
+    flex-wrap: wrap;
+    width: 370px;
+    align-self: flex-start;
+    border-right: solid 1px #2B5BD7;
+    border-left: solid 1px #2B5BD7;
+}
+
+.usa-box-1 {
+    margin-bottom: 20px;
+}
+
+.usa-box-2 {
+    margin-bottom: 20px;
+}
+
+
+/****************
+CONTACT FORM
+*****************/
+.contact-form {
+    flex-wrap: wrap;
+    width: 370px;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.input-field {
+    flex-wrap: wrap;
+    width: 250px;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.input-field-text {
+    flex-wrap: wrap;
+    width: 250px;
+    height: 20px;
+    margin: 10px 0;
+    padding-bottom: 100px;
+}
+
+.button {
+    flex-wrap: wrap;
+    background-color: #2B5BD7;
+    color: black;
+    height: 40px;
+    width: 120px;
+    margin: 10px 0;
+}
+
+.button h4 {
+    margin: 10px 0 0 30px;
+    color: white;
+}
+
+/************* 
+ End: Main
+***************/
